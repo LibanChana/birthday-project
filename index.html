@@ -10,9 +10,13 @@
 
 <body>
     <div>
+        <h3>Akan Naming Culture</h3>
+        <p>This is an application that take's a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their akan name.This akan names are derived from Ghanian culture who are mostly named the first day
+            of the week they were born either female or male.</p>
         <form id="birthday-form">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" id="birthday-input" placeholder="Your name..">
+            <label for="fname">Birthday</label>
+            <input type="text" id="ydate" name="Birthday" id="birthday-input" placeholder="your birthday...">
+
 
             <label for="country">Gender</label>
             <select id="gender" name="country">
@@ -20,14 +24,16 @@
             <option value="female">Female</option>
           </select>
 
-            <input type="submit" id="birthday-submit" value="Submit">
+            <input type="submit" onclick="myFunction()" value="Submit ">
         </form>
+
+        <p id="akan-name"></p>
     </div>
 
 
 
 
-    <script src="index.js"></script>
+    <script src="index.js "></script>
 </body>
 
 </html>
