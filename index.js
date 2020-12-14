@@ -1,17 +1,22 @@
-// var temperature = 16;
-// var raining = true;
-// if (temperature < 0) {
-//     console.log("Brr! Don't freeze out there!");
-// } else if (temperature < 15 || raining === true) {
-//     console.log("Don't forget a jacket!");
-// } else if (temperature < 25) {
-//     console.log("Have a nice day :)");
-// } else {
-//     console.log("Keep cool today!");
-// }
+var maleName = ["kwasi", "kwandwo", "kwabena", "kwaku", "Yaw", "Koffi", "Kwame"]
+var femaleName = ["Akosua", "Adwao", "Abena", "Akua", "Yaa", "Afua", "Ama"]
+
+function getday() {
+
+
+    var year = document.getElementById(" year").value;
+    var month = parseInt(document.getElementById(" month").value);
+    var day = parseInt(document.getElementById(" day").value);
+    var gender = parseInt(document.getElementById(" gender").value);
+    var clear = document.getElementById(" clear").reset;
+
+    var yy = parseInt(year.substr(2, 4));
+}
+
 function myFunction() {
 
     let x, text;
+
 
     // Get the value of the input field with id="numb"
     x = document.getElementById("ydate").value;
