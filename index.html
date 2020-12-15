@@ -6,35 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BirthDay Name Picker</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+
 </head>
 
 
 <body>
     <div>
+        <h5>Your Akan Name is:
+            <p id="name"></p>
+        </h5>
         <h3>Akan Naming Culture</h3>
         <p>This is an application that take's a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their akan name.This akan names are derived from Ghanian culture who are mostly named the first day
             of the week they were born either female or male.</p>
-        <form id="birthday-form">
+        <form>
             <label for="fname">Birthday</label>
-            <input type="text" id="yda  te" name="Birthday" id="birthday-input" placeholder="your birthday...">
+            <input type="number" name="Year" required id="year" placeholder="Input year your born.." max="2020">
+            <input type="number" name="Month" required id="month" placeholder="Input month your born.. ">
+            <input type="number" name="day" required id="day" placeholder="Input day your born... ">
 
-
-            <label for="country">Gender</label>
-            <select id="gender" name="country">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+            <label for="gender">Gender</label>
+            <select required id="gender" name="gender">
+                    <option>Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
           </select>
 
-            <input type="submit" onclick="myFunction()" value="Submit">
+            <input type="submit" onclick="dateSubmit()" value="Submit">
         </form>
 
+
+
     </div>
-    <p id="akan-name"></p>
 
 
 
 
-    <script src="index.js "></script>
+
+
 </body>
 
 </html>
