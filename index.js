@@ -17,31 +17,35 @@ function dateSubmit() {
 
 
     if (year <= 0 || year == "" || year > 2020) {
-        document.getElementById('name').innerHTML = ("enter valid year")
+
+        (document.getElementById('name').innerHTML = ("Invalid year"));
     }
-    if (month == 2) {
-        if (day == 29) {
+    if (month === 2) {
+        if (day === 29) {
             if (year % 4 != 0 || year % 100 == 0 && year % 400 != 0) {
-                prompt("enter valid date");
+                document.getElementById('name').innerHTML = ("Invalid date");
                 field.value = month + '/' + '';
             }
         } else if (day > 28) {
-            document.getElementById('name').innerHTML = ("enter valid date");
+            document.getElementById('name').innerHTML = localStorage.getItem("Invalid date");
             field.value = month + '/' + '';
         }
     } else
     if (month <= 0 || month > 12) {
-        document.getElementById('name').innerHTML = ("enter valid month")
+        document.getElementById('name').innerHTML = localStorage.getItem("Invalid month")
     } else
     if (day < 1 || day > 31) {
-        document.getElementById('name').innerHTML = ("enter valid date")
+        document.getElementById('name').innerHTML = localStorage.getItem("Invalid date")
 
     }
 
     if (gender === "male") {
-        document.getElementById('name').innerHTML = (males[date])
+        localStorage.setItem(males[date])
+        console.log(males[date]);
+        alert(females[date])
     } else
     if (gender === "female") {
-        document.getElementById('name').innerHTML = (females[date])
+        console.log(females[date]);
+        alert(females[date])
     }
 }
