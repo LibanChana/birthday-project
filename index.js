@@ -40,7 +40,7 @@ function dateSubmit() {
     }
 
     if (gender === "male") {
-        localStorage.setItem(males[date])
+        // localStorage.setItem(males[date])
         console.log(males[date]);
         alert(females[date])
     } else
